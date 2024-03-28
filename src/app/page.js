@@ -1,4 +1,5 @@
 import LandingPage from "@/components/LandingPage";
+import Marquee from "@/components/Marquee";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="w-full">
       <Navbar />
       <LandingPage />
+      <Marquee />
     </div>
   );
 }

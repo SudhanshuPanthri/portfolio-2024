@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const LandingPage = () => {
     return (
-        <div className="w-full h-screen">
+        <div className="w-full h-[80vh] lg:h-screen border-spacing-1">
             <div className="textStructure mt-10 flex flex-col gap-6 px-8 py-6 lg:px-16">
                 {["Hi, I'm", "Sudhanshu Panthri", "A Software Developer"].map((item, index) => (
                     <div className="masker" key={index}>
@@ -15,7 +15,7 @@ const LandingPage = () => {
                     <h5 className="flex gap-2">{`(SCROLL TO EXPLORE) `}<ArrowDown className="transition-[0.3s] repeat-infinite animate-bounce" /></h5>
                 </div>
             </div>
-            <div className="border-t-2 border-zinc-200 mt-28"></div>
+            <div className="border-t-2 border-zinc-200 mt-44"></div>
             <div className="flex justify-between items-center px-8 py-6 lg:px-16">
                 <div>
                     <Link href="https://github.com/SudhanshuPanthri" target="_blank" className="flex justify-center items-center gap-4">
