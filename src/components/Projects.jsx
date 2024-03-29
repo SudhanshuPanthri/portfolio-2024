@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion'
 import { ArrowRight, Github } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Projects = () => {
-
     const data = [
         {
             name: "Querio",
@@ -31,13 +31,14 @@ const Projects = () => {
             </div>
             <div className="cards w-full h-full flex flex-wrap items-center justify-between gap-10 px-2 py-4">
                 {data.map((item, index) => (
-                    <div key={index} className='w-full px-2 py-4 rounded-lg lg:w-[48%] relative'>
-                        {/* <h1 className={`absolute uppercase ${index % 2 === 0 ? "left-full -translate-x-1/2" : "right-full translate-x-1/2"} z-[9] text-5xl leading-none tracking-tighter  top-1/2 -translate-y-1/2`}>
+                    <div key={index} className='w-full  lg:h-[90vh] px-2 py-4 rounded-lg lg:w-[48%] relative'>
+                        {/* <h1 className={`absolute uppercase ${(index % 2) + 1 === 1 ? "left-full -translate-x-1/2" : "right-full translate-x-1/2"} z-[9] flex text-5xl text-red-500 leading-none tracking-tighter top-1/2 -translate-y-1/2`}>
                             {item.name.split('').map((item, index) => (
-                                <span key={index} className=''>{item}</span>
+                                <motion.span initial={{ y: "100 %" }} key={index} className="inline-block translate-y-full">{item}</motion.span>
                             ))}
                         </h1> */}
                         <div className="cardContainer w-full">
+                            <h1 className='text-4xl my-4'>{item.name}</h1>
                             <div className='card w-full h-full rounded-lg overflow-hidden relative shadow-lg'>
                                 <Image src={item.projectImg} alt="Project Image" width={1920} height={1080} className='h-[25vh] lg:h-[40vh]' />
                             </div>

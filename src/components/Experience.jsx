@@ -3,7 +3,7 @@ import React from 'react'
 
 const Experience = () => {
     return (
-        <div className='w-full bg-[#EFBC9B] rounded-tl-3xl rounded-tr-3xl gap-6 px-8 py-14 lg:px-16 text-black'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.045" className='w-full bg-[#EFBC9B] rounded-tl-3xl rounded-tr-3xl gap-6 px-8 py-14 lg:px-16 text-black'>
             <div className='w-full py-2 flex items-center gap-4 justify-start mb-4 lg:mb-8'>
                 <h1 className='text-3xl lg:text-6xl'>Experience</h1>
                 <ArrowRight className="h-6 w-6 lg:h-10 lg:w-10" />

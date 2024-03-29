@@ -17,13 +17,13 @@ const Navbar = () => {
                 <h2 className="font-semibold text-lg">dev.sudhanshu</h2>
             </div>
             <div className="hidden lg:flex lg:gap-8 lg:items-center lg:justify-center">
-                <h2>Projects</h2>
-                <h2>About Me</h2>
-                <h2>Contact</h2>
+                {/* <h2>Projects</h2> */}
+                {/* <h2>About Me</h2> */}
+                {/* <h2>Contact</h2> */}
                 <ModeToggle />
             </div>
             <div className="px-4 flex gap-8 lg:hidden">
-                <DropdownMenu>
+                {/* <DropdownMenu>
                     <DropdownMenuTrigger>
                         <SendHorizontal />
                     </DropdownMenuTrigger>
@@ -32,7 +32,7 @@ const Navbar = () => {
                         <DropdownMenuItem className="py-4">About Me</DropdownMenuItem>
                         <DropdownMenuItem className="py-4">Contact</DropdownMenuItem>
                     </DropdownMenuContent>
-                </DropdownMenu>
+                </DropdownMenu> */}
                 <div>
                     <ModeToggle />
                 </div>
