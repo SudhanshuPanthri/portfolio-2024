@@ -38,7 +38,7 @@ const Footer = () => {
                 {/* <h1 className='text-3xl my-10 lg:text-4xl font-semibold leading-tight'>{`Okay, i won't waste your time more >.<`}</h1> */}
                 <h1 className='text-3xl mt-36 lg:text-7xl font-semibold leading-tight'>{`Let's Connect`}</h1>
                 <div className='w-full flex items-center justify-center'>
-                    <h1 className='flex gap-2 mt-20 mb-6'>Made with <Heart className='fill-red-500' /> in Next JS</h1>
+                    <h1 className='absolute bottom-0 flex gap-2 mb-10 mt-20'>Made with <Heart className='fill-red-500' /> in Next JS</h1>
                 </div>
             </div>
         </div>

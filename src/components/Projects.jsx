@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
-import { ArrowRight, Github } from 'lucide-react'
+// import { motion } from 'framer-motion'
+import { ArrowRight, Dot, Github, } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -8,17 +8,27 @@ const Projects = () => {
     const data = [
         {
             name: "Querio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni",
+            description: "A Student Query System for College.",
+            points: ["Ability to post and answer a query (only for registered User)", "Minimal UI and Secure authentication using (JWT)"],
             stackUsed: ["React JS", "Node JS", "Express JS", "MongoDB"],
             projectImg: "/1.png",
             githubLink: "https://github.com/SudhanshuPanthri/Querio-Client"
         },
         {
             name: "Airbnb",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ",
+            description: "A Resting Place Lookup website with the ability to book and add your own accommodation.",
+            points: ["Secure and Pleasing UI", "Ability to filter out places on diff. categories and states."],
             stackUsed: ["React JS", "Node JS", "Express JS", "MongoDB"],
             projectImg: "/6.png",
             githubLink: "https://github.com/SudhanshuPanthri/AIRBNB-clone-2023"
+        },
+        {
+            name: "Depace Maison - Landing Page",
+            description: "An AWWWARDS wining website clone",
+            points: [],
+            stackUsed: ["HTML", "CSS", "JS", "GSAP"],
+            projectImg: "/img.png",
+            githubLink: "https://github.com/SudhanshuPanthri/Deplace-Maison-Landing-Page"
         },
     ]
 
@@ -31,7 +41,7 @@ const Projects = () => {
             </div>
             <div className="cards w-full h-full flex flex-wrap items-center justify-between gap-10 px-2 py-4">
                 {data.map((item, index) => (
-                    <div key={index} className='w-full  lg:h-[90vh] px-2 py-4 rounded-lg lg:w-[48%] relative'>
+                    <div key={index} className='w-full lg:h-[90vh] px-2 py-4 rounded-lg lg:w-[48%]'>
                         {/* <h1 className={`absolute uppercase ${(index % 2) + 1 === 1 ? "left-full -translate-x-1/2" : "right-full translate-x-1/2"} z-[9] flex text-5xl text-red-500 leading-none tracking-tighter top-1/2 -translate-y-1/2`}>
                             {item.name.split('').map((item, index) => (
                                 <motion.span initial={{ y: "100 %" }} key={index} className="inline-block translate-y-full">{item}</motion.span>
@@ -46,6 +56,14 @@ const Projects = () => {
                         <div>
                             <div className='my-4'>
                                 <h3>{item.description}</h3>
+                            </div>
+                            <div className='my-4' >
+                                {item.points.map((point, index) => (
+                                    <div key={index} className='flex gap-2 items-center'>
+                                        <Dot />
+                                        <h1>{point}</h1>
+                                    </div>
+                                ))}
                             </div>
                             <h2 className='my-3 flex gap-2'>STACK USED <ArrowRight /></h2>
                             <div className='flex gap-2'>
