@@ -21,7 +21,7 @@ const Experience = () => {
                     <h3>{`< C# HTML CSS JS SITECORE .net >`}</h3>
                 </div>
                 <div className='w-full mt-6 lg:mt-12'>
-                    <h2 className='text-xl'>Currently working with SITECORE to develop websites</h2>
+                    <h2 className='text-xl'>Currently Working On Creating Dynamic Sites using Sitecore and MVC Architecture.</h2>
                 </div>
             </div>
         </div>
