@@ -16,7 +16,11 @@ const LandingPage = () => {
                     <h5 className="flex gap-2">{`(SCROLL TO EXPLORE) `}<ArrowDown className="transition-[0.3s] repeat-infinite animate-bounce" /></h5>
                 </div>
             </div>
+            <div className="w-full flex items-center justify-start mt-2 lg:hidden px-8 py-2 ">
+                <h2 className="capitalize text-sm">Use Desktop for the best viewing Experience</h2>
+            </div>
             <div className="border-t-2 border-zinc-200 mt-40 lg:mt-28"></div>
+
             <div className="flex justify-between items-center px-8 py-6 lg:px-16">
                 <div>
                     <Link href="https://github.com/SudhanshuPanthri" target="_blank" className="flex justify-center items-center gap-4">

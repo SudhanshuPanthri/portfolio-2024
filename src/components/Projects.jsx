@@ -36,7 +36,7 @@ const Projects = () => {
     return (
         <div className='w-full bg-[#8B93FF] rounded-tl-3xl rounded-tr-3xl gap-6 px-8 py-14 lg:px-16 text-white border'>
             <div className='w-full py-2 flex items-center gap-4 justify-start mb-4 lg:mb-8'>
-                <h1 className='text-3xl lg:text-6xl'>Projects</h1>
+                <h1 className='text-3xl lg:text-6xl font-bold'>Projects</h1>
                 <ArrowRight className="h-6 w-6 lg:h-10 lg:w-10" />
             </div>
             <div className="cards w-full h-full flex flex-wrap items-center justify-between gap-10 px-2 py-4">
@@ -47,15 +47,15 @@ const Projects = () => {
                                 <motion.span initial={{ y: "100 %" }} key={index} className="inline-block translate-y-full">{item}</motion.span>
                             ))}
                         </h1> */}
-                        <div className="cardContainer w-full">
-                            <h1 className='text-4xl my-4'>{item.name}</h1>
+                        <div className="cardContainer w-full hover:scale-105 hover:transition-all duration-300 ease-in-out">
+                            <h1 className='text-4xl my-4 font-semibold'>{item.name}</h1>
                             <div className='card w-full h-full rounded-lg overflow-hidden relative shadow-lg'>
                                 <Image src={item.projectImg} alt="Project Image" width={1920} height={1080} className='h-[25vh] lg:h-[40vh]' />
                             </div>
                         </div>
                         <div>
                             <div className='my-4'>
-                                <h3>{item.description}</h3>
+                                <h3 className='text-lg lg:text-xl'>{item.description}</h3>
                             </div>
                             <div className='my-4' >
                                 {item.points.map((point, index) => (
@@ -66,9 +66,9 @@ const Projects = () => {
                                 ))}
                             </div>
                             <h2 className='my-3 flex gap-2'>STACK USED <ArrowRight /></h2>
-                            <div className='flex gap-2'>
+                            <div className='flex gap-2 flex-wrap'>
                                 {item.stackUsed.map((st, index) => (
-                                    <span key={index} className='px-2 py-2 rounded-xl text-black bg-white hover:bg-black hover:border-none hover:text-white hover:transition-all duration-300 cursor-pointer ease-in-out'>{st}</span>
+                                    <span key={index} className='px-2 py-2 rounded-xl text-sm lg:text-lg text-black bg-white hover:bg-black hover:border-none hover:text-white hover:transition-all duration-300 cursor-pointer ease-in-out'>{st}</span>
                                 ))}
                             </div>
 

@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <div className='w-full relative h-screen px-8 py-14 lg:px-16'>
             <div className=''>
-                <h1 className='text-3xl lg:text-7xl font-semibold leading-tight'>Why was the JavaScript reality show cancelled after only one episode?</h1>
+                <h1 className='text-3xl lg:w-1/2 lg:text-5xl font-semibold leading-tight'>Why was the JavaScript reality show cancelled after only one episode?</h1>
                 <Drawer>
                     <DrawerTrigger>
                         <div className='flex justify-center items-center w-[80vw]'>

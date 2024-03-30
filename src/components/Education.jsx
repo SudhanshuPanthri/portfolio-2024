@@ -14,7 +14,7 @@ const Education = () => {
                         <h1 className='text-xl lg:text-3xl'>MCA</h1>
                         <h2>Vivekananda Institute Of Professional Studies</h2>
                     </div>
-                    <h2>8.5 CGPA</h2>
+                    <h2>8.75 CGPA</h2>
                 </div>
                 <div className='w-full flex items-center justify-between mt-6'>
                     <div>
